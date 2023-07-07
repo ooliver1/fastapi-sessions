@@ -1,8 +1,8 @@
-from distutils.core import setup
+from distutils.core import setup, find_packages
 
 setup(
     name="fastapi_sessions",
-    packages=["fastapi_sessions"],
+    packages=find_packages(include="fastapi_sessions*"),
     version="0.1",
     license="MIT",
     description="Ready-to-use session cookies with custom backends for FastAPI",
